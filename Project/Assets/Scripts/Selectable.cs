@@ -6,11 +6,14 @@ public class Selectable : MonoBehaviour {
 
 	public float speedMultiplier = 5f;
 	public bool clicked = false;
+	public bool correct = false;
 	Vector3 target = new Vector3(1,1,1);
+	Vector3 OriginalScale;
 
 	// Use this for initialization
 	void Start () {
-		
+		OriginalScale = gameObject.transform.localScale;
+		target = OriginalScale;
 	}
 	
 	// Update is called once per frame
@@ -24,13 +27,13 @@ public class Selectable : MonoBehaviour {
 
 	void OnMouseEnter () {
 
-		target = new Vector3 (1.1f, 1.1f, 1.1f);
+		target = OriginalScale + new Vector3 (0.1f, 0.1f, 0.1f);
 
 	}
 
 	void OnMouseExit () {
 
-		target = new Vector3 (1f, 1f, 1f);
+		target = OriginalScale;
 
 	}
 
