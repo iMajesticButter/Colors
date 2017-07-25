@@ -18,6 +18,6 @@ public class LevelHandler : MonoBehaviour {
 			Debug.Log ("win");
 			Application.Quit ();
 		}
-		gameObject.GetComponent<Text> ().text = "Level: "+Level+"/"+MaxLevels;
+		gameObject.GetComponent<Text> ().text = "Level: " + Level + "/" + MaxLevels;
 	}
 }
