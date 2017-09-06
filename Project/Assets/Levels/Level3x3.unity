@@ -260,10 +260,10 @@ MonoBehaviour:
   - {r: 0, g: 0.751724, b: 1, a: 0}
   SelectableCube: {fileID: 1722753389875744, guid: 0be914237b87bd04da547530b7d7dba0,
     type: 2}
-  Spaceing: 0.2
-  Size: 3
-  Scale: 2
-  RandomAmmount: 0.4
+  Spaceing: 0.3
+  Size: 10
+  Scale: 0.5
+  RandomAmmount: 0.2
   LevelHandler: {fileID: 1525429936}
   Timer: {fileID: 245832465}
   Started: 0
